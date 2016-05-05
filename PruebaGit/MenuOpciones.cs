@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace PruebaGit
 {
-    public partial class Form1 : Form
+    public partial class MenuOpciones : Form
     {
-        public Form1()
+        public MenuOpciones()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            NumerosRomanos NR = new NumerosRomanos();
+            NR.Show();
+            this.Hide();
         }
     }
 }

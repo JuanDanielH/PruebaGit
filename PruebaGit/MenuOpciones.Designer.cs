@@ -1,6 +1,6 @@
 ﻿namespace PruebaGit
 {
-    partial class Form1
+    partial class MenuOpciones
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -64,8 +64,9 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Numeros Romanos";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // MenuOpciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -73,8 +74,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MenuOpciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menu de Opciones";
             this.ResumeLayout(false);
             this.PerformLayout();
 
