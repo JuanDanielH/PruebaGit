@@ -250,6 +250,13 @@ namespace PruebaGit
             }
         }
 
+        private void button18_Click(object sender, EventArgs e)
+        {
+            MenuOpciones MO = new MenuOpciones();
+            MO.Show();
+            this.Hide();
+        }
+
 
     }
 }

@@ -46,6 +46,7 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -198,7 +199,7 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(251, 343);
+            this.button15.Location = new System.Drawing.Point(157, 343);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(75, 23);
             this.button15.TabIndex = 16;
@@ -208,7 +209,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(157, 343);
+            this.button16.Location = new System.Drawing.Point(55, 343);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(75, 23);
             this.button16.TabIndex = 17;
@@ -226,11 +227,22 @@
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
-            // PantallaPrincipal
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(251, 343);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.TabIndex = 19;
+            this.button18.Text = "Regresar";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // frmCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 393);
+            this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
@@ -249,7 +261,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "PantallaPrincipal";
+            this.Name = "frmCalculadora";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora Basica";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -276,5 +289,6 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
     }
 }
