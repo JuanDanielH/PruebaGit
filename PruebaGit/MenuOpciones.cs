@@ -23,5 +23,12 @@ namespace PruebaGit
             NR.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmCalculadora Ca = new frmCalculadora();
+            Ca.Show();
+            this.Hide();
+        }
     }
 }
