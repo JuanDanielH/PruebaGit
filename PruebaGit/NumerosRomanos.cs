@@ -195,11 +195,14 @@ namespace PruebaGit
                 {
                     txtNumeroRomano.Text = numRomanos[Convert.ToInt32(txtNumeroNormal.Text)];
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show("Maximo 4 digitos!!");
+                    txtNumeroNormal.Text = txtNumeroNormal.Text.Substring(0, 4);
                 }
             }
+            else
+                txtNumeroRomano.Text = string.Empty;
         }
 
         private void button1_Click(object sender, EventArgs e)
