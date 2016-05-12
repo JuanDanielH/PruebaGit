@@ -12,15 +12,7 @@ namespace PruebaGit
 {
     public partial class NumerosRomanos : Form
     {
-        public NumerosRomanos()
-        {
-            InitializeComponent();
-        }
-
-
-        private void txtNumeroNormal_TextChanged(object sender, EventArgs e)
-        {
-            string[] numRomanos = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI", "XXII",
+        string[] numRomanos = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI", "XXII",
 "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX", "XXXI", "XXXII", "XXXIII", "XXXIV", "XXXV", "XXXVI", "XXXVII", "XXXVIII",
 "XXXIX", "XL", "XLI", "XLII", "XLIII", "XLIV", "XLV", "XLVI", "XLVII", "XLVIII", "XLIX", "L", "LI", "LII", "LIII", "LIV", "LV", "LVI", "LVII",
 "LVIII", "LIX", "LX", "LXI", "LXII", "LXIII", "LXIV", "LXV", "LXVI", "LXVII", "LXVIII", "LXIX", "LXX", "LXXI", "LXXII", "LXXIII", "LXXIV", "LXXV",
@@ -189,6 +181,13 @@ namespace PruebaGit
 "MMCMLVII", "MMCMLVIII", "MMCMLIX", "MMCMLX", "MMCMLXI", "MMCMLXII", "MMCMLXIII", "MMCMLXIV", "MMCMLXV", "MMCMLXVI", "MMCMLXVII", "MMCMLXVIII", "MMCMLXIX", "MMCMLXX", "MMCMLXXI", "MMCMLXXII", "MMCMLXXIII", "MMCMLXXIV",
 "MMCMLXXV", "MMCMLXXVI", "MMCMLXXVII", "MMCMLXXVIII", "MMCMLXXIX", "MMCMLXXX", "MMCMLXXXI", "MMCMLXXXII", "MMCMLXXXIII", "MMCMLXXXIV", "MMCMLXXXV", "MMCMLXXXVI", "MMCMLXXXVII", "MMCMLXXXVIII", "MMCMLXXXIX", "MMCMXC",
 "MMCMXCI", "MMCMXCII", "MMCMXCIII", "MMCMXCIV", "MMCMXCV", "MMCMXCVI", "MMCMXCVII", "MMCMXCVIII", "MMCMXCIX", "MMM" };
+        public NumerosRomanos()
+        {
+            InitializeComponent();
+        }
+
+        private void txtNumeroNormal_TextChanged(object sender, EventArgs e)
+        {
             if (txtNumeroNormal.Text != string.Empty)
             {
                 try
