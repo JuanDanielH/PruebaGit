@@ -196,7 +196,7 @@ namespace PruebaGit
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Maximo 4 digitos!!");
+                    MessageBox.Show("Numero maximo:3000 !!");
                     txtNumeroNormal.Text = txtNumeroNormal.Text.Substring(0, 4);
                 }
             }
